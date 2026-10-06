@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+:root {
+  --color-tt-blue: #002F6C;
+  --color-tt-light-blue: #0077C8;
+  --color-tt-turquoise: #00B2A9;
+  --color-tt-green: #84BD00;
+  --color-tt-yellow: #FFD100;
+  --color-tt-orange: #FF6A00;
+  --color-tt-purple: #7A2048;
+}
+
+/* Arrière-plan animé inspiré des facettes du logo TT */
+.tt-gradient-bg {
+  background: linear-gradient(135deg, #0077C8, #00B2A9, #84BD00, #FFD100, #FF6A00, #7A2048);
+  background-size: 400% 400%;
+  animation: ttGradientAnimation 15s ease infinite;
+}
+
+@keyframes ttGradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
